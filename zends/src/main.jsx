@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './Pages/Home.jsx'
 import PageNotFound from './Pages/PageNotFound.jsx'
 import Contato from './Pages/Contato.jsx'
+import SecuritySuite from './Pages/SecuritySuite.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       children: [
           { index: true, element: <Home /> },
           { path: 'contato', element: <Contato /> },
+          { path: 'securitysuite', element: <SecuritySuite /> },
           { path: "*", element: <PageNotFound /> }
       ]
   }
