@@ -11,7 +11,7 @@ function Navbar() {
                     <Link to="/">HOME</Link>
                 </li>
 
-                <li className={`${location.pathname === '/cliente' ? 'border-b-2 px-2 border-cyan-500 text-cyan-500 hover:tracking-widest transition-all ' : 'px-2 border-cyan-500 hover:border-b-2 hover:tracking-widest hover:text-cyan-500 transition-all'}`}>
+                <li className={`${location.pathname === '/Contato' ? 'border-b-2 px-2 border-cyan-500 text-cyan-500 hover:tracking-widest transition-all ' : 'px-2 border-cyan-500 hover:border-b-2 hover:tracking-widest hover:text-cyan-500 transition-all'}`}>
                     <Link to="/Contato">CONTATO</Link>
                 </li>
             </ul>
