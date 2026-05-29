@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 const SS = () => {
+    const navigate = useNavigate();
     return (
       <div className="min-h-screen flex flex-col bg-neutral-900 text-white">
   
@@ -113,9 +116,8 @@ const SS = () => {
         href="/contato" 
         className="w-56 h-12 px-6 py-3 opacity-90 text-cyan-500 border rounded-sm border-cyan-500 font-semibold hover:bg-gradient-to-br hover:tracking-wide hover:from-cyan-500 hover:to-blue-900 hover:text-white flex items-center justify-center gap-2 transition-all drop-shadow-2xl mx-auto"
         onClick={(e) => {
-          // Remover esse evento se não for necessário, já que o href faz o redirecionamento
           e.preventDefault();
-          window.location.href = '/contato';  // Usando o caminho para a página de contato
+          navigate('/contato');
         }}
       >
         Contato
